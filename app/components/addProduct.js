@@ -102,13 +102,14 @@ export default class AddProduct extends Component {
     /*Validação simples para os campos*/
     handleValidation(){
         document.getElementById("erros").style.display = "none";
-        let product =  document.getElementById("product").value;
-        let qtd =   document.getElementById("qtd").value;
-        let val = document.getElementById("val").value;
+        let product =  this.state.product;
+        let qtd =   this.state.qtd;
+        let val = this.state.val;
+        
         let errors = "";
     
     
-        if(product === "") errors += '<p>Nome não pode ser vazio</p>';
+        if(product === "") errors += '<p>Produto não pode ser vazio</p>';
     
         if(qtd === "")
             errors += '<p>Quantidade não pode ser vazio</p>';
