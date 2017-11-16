@@ -1,0 +1,90 @@
+@import "reset";
+
+#header{
+    h1{
+        font-size: 24px;
+        color: gray;
+    }
+}
+
+#hero{
+
+    form{
+        width:100%;
+        float:left;
+        position: relative;
+
+        .form-group, input, button{
+            @include calc(width, '100% - 5px');
+            max-width: 250px;
+            margin-right: 5px;
+            height: 45px;
+            font-size:2rem;
+        }
+    }
+
+    #marketTable{
+        width: 100%;
+        float:left;
+        position: relative;
+        margin-top:10px;
+
+        thead{
+            font-weight: bold;
+        }
+
+        td{
+            font-size:1.8em;
+            padding:0;
+            padding:5px;
+            margin:0;
+            text-align: center;
+            vertical-align: middle;
+
+            button{
+                margin:0 10px;
+                width:150px;
+            }
+        }
+
+
+        .done{
+            background-color:#ddd;
+            color:gray;
+            text-decoration: line-through;
+
+            td{
+                text-decoration: line-through;
+
+                button:nth-child(1){
+                    background-color:gray;
+                    outline: none;
+                    border-color:gray;
+                }
+            }
+        }
+    }
+}
+
+
+#er{
+    #erros{
+        width:100%;
+        float:left;
+        position: relative;
+        padding:10px;
+        display: none;
+        margin:5px 0;
+        
+        p{
+            margin:0;padding:0;
+            font-size:1.8em;
+
+            &:before{
+                content:"•";
+                margin-right: 10px;
+            }
+        }
+    }
+}
+

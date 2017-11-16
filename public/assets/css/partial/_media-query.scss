@@ -1,0 +1,65 @@
+/* breakpoints */
+$x-small: 280px;
+$small: 570px;
+$medium: 780px;
+$large: 990px;
+$x-large: 1200px;
+
+/* media query */
+@mixin media-query($canvas) {
+
+    @if $canvas == xsm {
+        @media only screen and (min-width: $x-small) and (max-width : $medium) {
+            @content;
+        }
+    }
+
+    @if $canvas == xsml {
+        @media only screen and (min-width: $x-small) and (max-width : $large) {
+            @content;
+        }
+    }
+
+
+    @if $canvas == xsl {
+        @media only screen and (min-width: $x-small) and (max-width : $x-large) {
+            @content;
+        }
+    }
+
+    @if $canvas == sml {
+        @media only screen and (min-width: $small) and (max-width : $x-large) {
+            @content;
+        }
+    }
+
+    @if $canvas == xs {
+        @media only screen and (min-width: $x-small) and (max-width : $small) {
+            @content;
+        }
+    }
+
+    @else if $canvas == s {
+        @media only screen and (min-width: $small) and (max-width : $medium) {
+            @content;
+        }
+    }
+
+    @else if $canvas == m {
+        @media only screen and (min-width: $medium) and (max-width: $large) {
+            @content;
+        }
+    }
+
+    @else if $canvas == l {
+        @media only screen and (min-width: $large) and (max-width: $x-large) {
+            @content;
+        }
+    }
+
+    @else if $canvas == xl {
+        @media only screen and (min-width: $x-large) {
+            @content;
+        }
+    }
+}

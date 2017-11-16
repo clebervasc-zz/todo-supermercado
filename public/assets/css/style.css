@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* breakpoints */
+/* media query */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none; }
+
+body {
+  font-size: 10px; }
+
+section, header, footer, article {
+  width: 100%;
+  float: left;
+  position: relative; }
+
+#header h1 {
+  font-size: 24px;
+  color: gray; }
+
+#hero form {
+  width: 100%;
+  float: left;
+  position: relative; }
+  #hero form .form-group, #hero form input, #hero form button {
+    width: -webkit-calc(100% - 5px);
+    width: -moz-calc(100% - 5px);
+    width: -ms-calc(100% - 5px);
+    width: -o-calc(100% - 5px);
+    width: calc(100% - 5px);
+    max-width: 250px;
+    margin-right: 5px;
+    height: 45px;
+    font-size: 2rem; }
+#hero #marketTable {
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: 10px; }
+  #hero #marketTable thead {
+    font-weight: bold; }
+  #hero #marketTable td {
+    font-size: 1.8em;
+    padding: 0;
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle; }
+    #hero #marketTable td button {
+      margin: 0 10px;
+      width: 150px; }
+  #hero #marketTable .done {
+    background-color: #ddd;
+    color: gray;
+    text-decoration: line-through; }
+    #hero #marketTable .done td {
+      text-decoration: line-through; }
+      #hero #marketTable .done td button:nth-child(1) {
+        background-color: gray;
+        outline: none;
+        border-color: gray; }
+
+#er #erros {
+  width: 100%;
+  float: left;
+  position: relative;
+  padding: 10px;
+  display: none;
+  margin: 5px 0; }
+  #er #erros p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em; }
+    #er #erros p:before {
+      content: "•";
+      margin-right: 10px; }
+
+/*# sourceMappingURL=style.css.map */

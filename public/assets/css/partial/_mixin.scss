@@ -1,0 +1,149 @@
+@mixin appearance($appearance) {
+    -webkit-appearance: $appearance;
+    -moz-appearance: $appearance;
+    -ms-appearance: $appearance;
+    -o-appearance: $appearance;
+appearance: $appearance;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+box-shadow: $shadow;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+transition: $transition;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    -o-transform: $transform;
+transform: $transform;
+}
+
+@mixin animation($str) {
+-webkit-animation: #{$str};
+-moz-animation: #{$str};
+-ms-animation: #{$str};
+-o-animation: #{$str};
+animation: #{$str};      
+}
+
+
+@mixin selection {
+::-webkit-selection { @content; }
+::-moz-selection { @content; }
+::-ms-selection { @content; }
+::-o-selection { @content; }
+::selection { @content; }
+}
+
+@mixin scrollbar {
+::-webkit-scrollbar { @content; }
+::-moz-scrollbar { @content; }
+::-ms-scrollbar { @content; }
+::-o-scrollbar { @content; }
+::scrollbar { @content; }
+}
+
+@mixin scrollbar-button {
+::-webkit-scrollbar-button { @content; }
+::-moz-scrollbar-button { @content; }
+::-ms-scrollbar-button { @content; }
+::-o-scrollbar-button { @content; }
+::scrollbar-button { @content; }
+}
+
+@mixin scrollbar-track {
+::-webkit-scrollbar-track { @content; }
+::-moz-scrollbar-track { @content; }
+::-ms-scrollbar-track { @content; }
+::-o-scrollbar-track { @content; }
+::scrollbar-track { @content; }
+}
+
+@mixin scrollbar-track-piece {
+::-webkit-scrollbar-track-piece { @content; }
+::-moz-scrollbar-track-piece { @content; }
+::-ms-scrollbar-track-piece { @content; }
+::-o-scrollbar-track-piece { @content; }
+::scrollbar-track-piece { @content; }
+}
+
+@mixin scrollbar-thumb {
+::-webkit-scrollbar-thumb { @content; }
+::-moz-scrollbar-thumb { @content; }
+::-ms-scrollbar-thumb { @content; }
+::-o-scrollbar-thumb { @content; }
+::scrollbar-thumb { @content; }
+}
+
+@mixin scrollbar-corner {
+::-webkit-scrollbar-corner { @content; }
+::-moz-scrollbar-corner { @content; }
+::-ms-scrollbar-corner { @content; }
+::-o-scrollbar-corner { @content; }
+::scrollbar-corner { @content; }
+}
+
+@mixin resizer {
+::-webkit-resizer { @content; }
+::-moz-resizer { @content; }
+::-ms-resizer { @content; }
+::-o-resizer { @content; }
+::resizer { @content; }
+}
+
+
+
+@mixin keyframes($animation-name) {
+@-webkit-keyframes #{$animation-name} {
+    @content;
+}
+@-moz-keyframes #{$animation-name} {
+    @content;
+}  
+@-ms-keyframes #{$animation-name} {
+    @content;
+}
+@-o-keyframes #{$animation-name} {
+    @content;
+}  
+@keyframes #{$animation-name} {
+    @content;
+}
+}
+
+
+@mixin calc($property, $expression) {
+#{$property}: -webkit-calc(#{$expression});
+#{$property}: -moz-calc(#{$expression});
+#{$property}: -ms-calc(#{$expression});
+#{$property}: -o-calc(#{$expression});
+#{$property}: calc(#{$expression});
+}
+
+@mixin filter($filter-type,$filter-amount) { 
+-webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+-moz-filter: $filter-type+unquote('(#{$filter-amount})');
+-ms-filter: $filter-type+unquote('(#{$filter-amount})');
+-o-filter: $filter-type+unquote('(#{$filter-amount})');
+filter: $filter-type+unquote('(#{$filter-amount})');
+}
