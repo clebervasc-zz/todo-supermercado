@@ -1,5 +1,5 @@
 # todo-supermercado
-Simples aplicação de Lista de compras. Teste de Admissão
+Simples aplicação de Lista de compras.
 
 
 
